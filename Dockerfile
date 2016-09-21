@@ -3,9 +3,8 @@ FROM node:6
 MAINTAINER hoatle <hoatle@teracy.com>
 
 # pattern YYYMMDD:HHMMSS
-# update this when we want to rebuild the image, for example, to update npm modules
+# update this when we want to rebuild the image (force no cache)
 ENV REFRESHED_AT 20160920:000000
-
 
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
     && sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' \
