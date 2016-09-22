@@ -22,6 +22,6 @@ RUN chmod +x /etc/init.d/xvfb \
 ENV DISPLAY :99.0
 ENV CHROME_BIN /usr/bin/google-chrome
 
-RUN npm install -g angular-cli
+RUN npm install -g angular-cli && npm cache clean && rm -rf ~/.npm
 
 ENTRYPOINT ["/entrypoint.sh"]
