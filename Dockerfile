@@ -2,10 +2,6 @@ FROM node:6
 
 MAINTAINER hoatle <hoatle@teracy.com>
 
-# pattern YYYMMDD:HHMMSS
-# update this when we want to rebuild the image (force no cache)
-ENV REFRESHED_AT 20160920:000000
-
 # credits to https://github.com/emmenko/docker-nodejs-karma 
 
 RUN curl https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
