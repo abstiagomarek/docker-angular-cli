@@ -26,7 +26,7 @@ root@4b15ab7dbf21:/usr/src# ng init
 
 For better developer experience with best practices, please follow this blog post:
 
-//TODO(hoatle): write the blog post
+http://blog.teracy.com/2016/09/22/how-to-develop-angular-2-applications-easily-with-docker-and-angular-cli/
 
 
 How to develop
